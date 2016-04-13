@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name           DxD Mobage English Translation
 // @namespace      DxD
+// @author	   TraceHunter
 // @description    DxD Mobage Japanese > English translation
 // @include        http://g12014827.sp.pf.mbga.jp/*
 // @include        https://g12014827.sp.pf.mbga.jp/*
