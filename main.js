@@ -4,7 +4,7 @@
 // @description    DxD Mobage Japanese > English translation
 // @include        http://g12014827.sp.pf.mbga.jp/*
 // @include        https://g12014827.sp.pf.mbga.jp/*
-// @version        0.2
+// @version        0.3
 // @icon           http://dxdmobage.xp3.biz/ico.ico
 // @downloadURL    https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
 // @updateURL      https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
