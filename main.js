@@ -4,7 +4,7 @@
 // @description    DxD Mobage Japanese > English translation
 // @include        http://g12014827.sp.pf.mbga.jp/*
 // @include        https://g12014827.sp.pf.mbga.jp/*
-// @version        0.1
+// @version        0.2
 // @icon           http://dxdmobage.xp3.biz/ico.ico
 // ==/UserScript==
 /*jshint multistr: true */
