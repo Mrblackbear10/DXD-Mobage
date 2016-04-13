@@ -4,7 +4,7 @@
 // @description    DxD Mobage Japanese > English translation
 // @include        http://g12014827.sp.pf.mbga.jp/*
 // @include        https://g12014827.sp.pf.mbga.jp/*
-// @version        0.3
+// @version        0.4
 // @icon           http://dxdmobage.xp3.biz/ico.ico
 // @downloadURL    https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
 // @updateURL      https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
@@ -27,7 +27,8 @@ $('.modalMenuBtn').html('<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2F
 		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fpresent.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Giftbox.png" alt="プレゼントBOX" width="67" height="44"></a></li> \
 		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fhelp.html"><img src="http://dxdmobage.xp3.biz/Help.png" alt="ヘルプ" width="67" height="44"></a></li> \
 		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fannounce.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Announces.png" alt="運営からのお知らせ" width="67" height="44"></a></li> \
-		<li><a target="_blank" href="https://dxdmobage.wordpress.com/"><img src="http://dxdmobage.xp3.biz/Guide.png" alt="運営からのお知らせ" width="67" height="44"></a></li>');
+		<li><a target="_blank" href="https://dxdmobage.wordpress.com/"><img src="http://dxdmobage.xp3.biz/Guide.png" alt="運営からのお知らせ" width="67" height="44"></a></li> \
+        <li><a target="_blank" href="https://github.com/Tracehunter/DXD-Mobage/raw/master/Dxd.user.js"><img src="http://dxdmobage.xp3.biz/Updates.png" alt="運営からのお知らせ" width="67" height="44"></a></li>');
 
 //// Some Friend Gacha reconstruction, skip animation is always ON.
 $('#tpl_gacha-normal > section:nth-child(11) > ul:nth-child(8)').html('<li class="btnWhite btnMiddle"><a onclick="goNext(\'110\',10, \'skip_animation_plural\')">Draw 10 Cards for 1000 FP</a></li><br><li><input style="visibility: hidden;" id="skip_animation_single" value="off" checked="checked"></li>');
