@@ -6,6 +6,8 @@
 // @include        https://g12014827.sp.pf.mbga.jp/*
 // @version        0.2
 // @icon           http://dxdmobage.xp3.biz/ico.ico
+// @downloadURL    https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
+// @updateURL      https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
 // ==/UserScript==
 /*jshint multistr: true */
 
