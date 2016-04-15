@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name           DxD Mobage English Translation
 // @namespace      DxD
-// @author	   TraceHunter
 // @description    DxD Mobage Japanese > English translation
 // @include        http://g12014827.sp.pf.mbga.jp/*
 // @include        https://g12014827.sp.pf.mbga.jp/*
-// @version        0.4
+// @version        0.5
 // @icon           http://dxdmobage.xp3.biz/ico.ico
 // @downloadURL    https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
 // @updateURL      https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
@@ -13,23 +12,59 @@
 /*jshint multistr: true */
 
 //// Main menu reconstruction, to be able to use specific buttons.
-$('.modalMenuBtn').html('<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_list.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/CardList.png" alt="カード" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_deck.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Decks.png" alt="デッキ" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dequipment%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/upgrade.png" alt="強化" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dbalance_break%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Balance%20Breaker.png" alt="バランス・ブレイク" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_reborn.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Reborn.png" alt="転生進化" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_storage_list.html%3Faction%3Dplural%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Collection.png" alt="カードコレクション" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_album.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Album.png" alt="アルバム" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fitem.html%3Flist_type%3D6%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Inventory.png" alt="アイテム" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fguild_top.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Guild.png" alt="ギルド" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Ffriend_list.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Friendlist.png" alt="友達" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fprofile.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Profile.png" alt="プロフィール" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Finvitation.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/RAF.png" alt="招待" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fpresent.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Giftbox.png" alt="プレゼントBOX" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fhelp.html"><img src="http://dxdmobage.xp3.biz/Help.png" alt="ヘルプ" width="67" height="44"></a></li> \
-		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fannounce.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Announces.png" alt="運営からのお知らせ" width="67" height="44"></a></li> \
-		<li><a target="_blank" href="https://dxdmobage.wordpress.com/"><img src="http://dxdmobage.xp3.biz/Guide.png" alt="運営からのお知らせ" width="67" height="44"></a></li> \
-        <li><a href="https://github.com/Tracehunter/DXD-Mobage/raw/master/Dxd.user.js"><img src="http://dxdmobage.xp3.biz/Updates.png" alt="運営からのお知らせ" width="67" height="44"></a></li>');
+$('.modalMenuBtn').html('<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_list.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/CardList.png" alt="Card list" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_deck.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Decks.png" alt="Decks" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dequipment%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/upgrade.png" alt="Upgrades" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dbalance_break%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Balance%20Breaker.png" alt="Balance Breaker" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_reborn.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Reborn.png" alt="Reincarnation" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_storage_list.html%3Faction%3Dplural%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Collection.png" alt="Collection" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_album.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Album.png" alt="Album" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fitem.html%3Flist_type%3D6%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Inventory.png" alt="Inventory" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fguild_top.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Guild.png" alt="Guild" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Ffriend_list.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Friendlist.png" alt="Friendlist" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fprofile.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Profile.png" alt="Profile" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Finvitation.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/RAF.png" alt="RAF" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fpresent.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Giftbox.png" alt="Giftbox" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fhelp.html"><img src="http://dxdmobage.xp3.biz/Help.png" alt="Help" width="67" height="44"></a></li> \
+		<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fannounce.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Announces.png" alt="Announces" width="67" height="44"></a></li> \
+		<li><a target="_blank" href="https://dxdmobage.wordpress.com/"><img src="http://dxdmobage.xp3.biz/Guide.png" alt="Guide" width="67" height="44"></a></li> \
+        <li><a href="http://g12014827.sp.pf.mbga.jp/?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fspecial.html%3Fname%3Dlogin_bonus"><img src="http://dxdmobage.xp3.biz/Login Bonus.png" alt="Login Bonus" width="67" height="44"></a></li> \
+        <li><a href="https://github.com/Tracehunter/DXD-Mobage/raw/master/Dxd.user.js"><img src="http://dxdmobage.xp3.biz/Ver05.png" alt="V0.5" width="67" height="44"></a></li>');
+
+//Event Oil
+$('#tpl_top > section:nth-child(14) > div').html('<p style="text-align:center;">24 hours only Overboost effect X1.5 !!<br><span class="textGlow kousaiPink white">Ends on April 16th 2016 10:59:59</span><br></p>');
+$('#tpl_top > div.textGlow.kousaiPink.white.mb5.mt5').html('<p class="center" title="★Get 1.2X more items for 24hours only★">★Get 1.2X more items for 24hours only★</p>');
+$('#count_extra_quest2').html('<p class="center" title="Dimensional dungeon&nbsp;" style="display:inline;">Dimensional dungeon&nbsp;</p></span>');
+$('#count_extra_quest3').html('<span id="count_extra_quest3" class="textGlow  white" style="white-space:nowrap;"><p class="center" title="You only need " style="display:inline;">You only need </p></span>');
+$('#count_extra_quest3 > p').eq(2).prop('title', "Left!");
+$('#count_extra_quest3 > p').eq(2).text("Left!");
+if (window.location.href.indexOf("http://g12014827.sp.pf.mbga.jp/?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fevent150_quest_main.html") > -1) {
+var str = $('#count_extra_quest3 > p').eq(1).prop('title');
+var Title = str.slice(0, 3);
+$('#count_extra_quest3 > p').eq(1).prop('title', Title + " Oil units");
+}
+
+
+
+
+//SKIP Friend Gacha cardlist
+$('#tpl_gacha-complete > section:nth-child(10)').html('');
+// Out of AP : Use Phenix tears !
+$('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(1)>a').html('<span style="font-size:10px;">Use 1 <br>20% AP</span>');
+$('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(2)>a').html('<span style="font-size:10px;">Use 2 <br>40% AP</span>');
+$('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(3)>a').html('<span style="font-size:10px;">Use 3<br>60% AP</span>');
+$('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(4)>a').html('<span style="font-size:10px;">Use 4<br>80% AP</span>');
+$('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(5)>a').html('<span style="font-size:10px;">Use 5<br>100% AP</span>');
+$('#reward_calendar > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > p').html('<img src="http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fnumber%2F1.png" height="15"><img src="http://dxdmobage.xp3.biz/Day.png" height="15">');
+
+
+$('#tpl_raid_battle-ready > section:nth-child(14) > dl:nth-child(1) > dd > ul > li:nth-child(1) > a').html('<strong>Attack</strong><br>-20PM');
+$('#tpl_raid_battle-ready > section:nth-child(14) > dl:nth-child(1) > dd > ul > li:nth-child(2) > a').html('<strong>Boosted Attack</strong><br>-60PM');
+$('#tpl_raid_battle-ready > section:nth-child(14) > dl:nth-child(1) > dd > ul > li:nth-child(3) > a').html('<strong>Explosion</strong><br>-100PM');
+
+
+//// Added shortcut after deleting a friend request ;-)
+$('#tpl_friend_complete > section:nth-child(10)').html('<img src="http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fline_3a.png" width="320"><ul class="btn1Column"><li class="btnLongPink"><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Ffriend_list.html%3Faction%3Dpending">Back to pending request</a><li class="btnLongPink"><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Ffriend_search.html">Search friends</a></li></ul>');
 
 //// Some Friend Gacha reconstruction, skip animation is always ON.
 $('#tpl_gacha-normal > section:nth-child(11) > ul:nth-child(8)').html('<li class="btnWhite btnMiddle"><a onclick="goNext(\'110\',10, \'skip_animation_plural\')">Draw 10 Cards for 1000 FP</a></li><br><li><input style="visibility: hidden;" id="skip_animation_single" value="off" checked="checked"></li>');
@@ -39,7 +74,6 @@ $('#tpl_gacha-complete > section:nth-child(15) > ul:nth-child(5)').html('<li cla
 
 //// Sitri Gacha Gift Box.
 $('#tpl_gacha-complete > section:nth-child(16) > ul.btnCenter.mt15').html('<li class="btnWhite btnMiddle"><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fpresent.html">Gift Box</a></li>');
-
 
 //// Overriding some CSS to change background buttons.
 function addGlobalStyle(css) {
@@ -62,6 +96,7 @@ addGlobalStyle('.btnGachaFree a {width: 202px;height: 45px;background: url("http
 addGlobalStyle('.mainContentBtn li:nth-child(4) {padding-top: 40px;width: 95px;height: 55px;background: url("http://dxdmobage.xp3.biz/Evolution.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
 addGlobalStyle('.mainContentBtn li:nth-child(1) {width: 160px;height: 59px;background: url("http://dxdmobage.xp3.biz/Quest.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
 addGlobalStyle('.mainContentBtn li:nth-child(2) {width: 160px;height: 59px;background: url("http://dxdmobage.xp3.biz/PVP.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.btnSusumuOrange a {display: block;width: 196px;height: 39px;background: url("http://dxdmobage.xp3.biz/Action_gold.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;margin: 4px 0;}');
 
 
 //// Beginning of textstring changes listing.
@@ -83,14 +118,28 @@ var words = {
     '禁手 バランス・ブレイカーSR' : 'Balance Breaker (SR)',
     'MAXレベルまで強化合成しているSRカードに使用することで、レベル上限を1アップすることができます' : 'Using this item on a SR card will increase his max level by 1. Note that there\'s a limit on how many levels you can add this way.',
     ' ※このアイテムではスキルレベルは上昇しませんのでご注意下さい' : 'Note that this material doesn\'t give experience to Skills.',
-
+    '☆今だけ獲得ギルドガチャPt2倍☆' : '☆ Guild Gacha X2 Limited Time !☆',
+    'アフターPt達成報酬' : 'Points rewards',
+    'レリックあと' : 'You only need ',
+    '個でｺﾝﾌﾟﾘｰﾄ!' : ' relics to complete a set !',
+    '総合ディメンションアイテムランキング報酬' : 'Final dimensional run ranking rewards',
+    '中間ディメンションアイテムランキング報酬' : 'Halfway dimensional run ranking rewards',
+    'ディメンションアイテムランキング' : 'Dimensional run ranking',
     '消費交換メダル:' : 'Medal cost: ',
     '交換制限:' : 'Qty Available:',
     '攻撃コスト上限:' : 'Offensive deck capacity: ',
+    'コンプリート報酬が受け取れます' : 'Relic set reward pending !',
     '防御コスト上限:' : 'Defensive deck capacity: ',
+    '後半ステージ解放&新レイドボス登場!!' : 'Last part of the event released + new boss !',
+    '撃破してイベントランキング上位を目指そう!!' : 'Aim at the rankings to get your rewards !',
     '進行中のクエスト:' : 'Quest in progress: ',
     'ゲーム開始日:' : 'Joined on: ',
+    '開催期間：' : 'Availability: ',
     '最大連続ログイン日数 :' : 'Daily login streak: ',
+    '現在累計' : 'You played ',
+    '日ログイン中!' : ' days this month !',
+    'ディメンションダンジョンまで' : 'Dimensional dungeon informations',
+    'その他の報酬を確認する>>' : 'Check other rewards >>',
     'ログイン日数:' : 'Days played: ',
     '・ガチャは、ランダムでカードを獲得できます。1回の利用ごとに全ての出現カードが抽選対象となります。そのため、必ずしもご希望のカードが獲得できるとは限りません。また、ガチャで手に入るカードは重複する場合があります。' : 'The card you receive is randomly chosen. Therefore, it is not always possible to get the card you desire, and some card may not be available at a specific time.',
     '・ガチャのラインナップは変更になる場合があります。' : 'Lineup is subject to change.',
@@ -100,6 +149,7 @@ var words = {
     '※獲得するカードの最大ソケット数はレアリティにより異なります。' : 'The number of socket a card has depend on his rarity and if you\'re lucky or not. For each socket on a card, you can use an upgrade on it.',
     '-ソケットの最大数：C×1,UC×2,R×3,HR×3,SR×4,SSR×5,UR×6,W×6,' : '- The maximum number of socket (upgrades) per rarity is: C×1,UC×2,R×3,HR×3,SR×4,SSR×5,UR×6,W×6,',
     '友情Ptとは' : 'Friend points FAQ',
+    '※ランキングは15分毎に更新されます。' : '※Ranking is updated every 15 minutes.',
 //// Messages from rias
     '次回コンプリート時は上位カード２枚から抽選！' : 'Next reward is a card from top tier !',
     '※コンプリート報酬はプレゼントBOXで受け取れます。' : 'You\'ll receive the reward in your Gift box !',
@@ -107,9 +157,14 @@ var words = {
     'カード一覧へ戻る' : 'Return to card list',
     'レリックコンプリート' : 'Relic set complete !',
     '位' : '#',
+    '称号情報' : 'PVP Title',
+    'デッキメンバー全員の戦闘力を2000アップ' : 'Increase all your deck members ATK by 2000.',
+    '最終進化のカードを見る' : 'See final evolution',
+    '進化度１のカードを見る' : 'See first stade',
     '今ならLv100まで獲得EXP2倍！' :'For a limited time get XP x2 until LV100 !',
     '-攻撃：' : '- as attacker: ',
     '-防衛：' : '- as defenser: ',
+    'レヴィアタンBOXガチャ' : 'Leviathan Gacha Box',
     '勝利数：' : 'Wins:',
     '期間限定イベント開催中!4/18(月)10:59まで' : 'Limited event ! Ends  4/18 (Monday) 10:59 !',
     '贈り物が届いているわ。' : 'You have item in your Gift box !',
@@ -122,7 +177,12 @@ var words = {
     '自分のレリック一覧' : 'Relic list',
     '撃破成功' : 'Defeated',
     '行動力が20%回復します' : 'This item restore 20% of your Action Points.',
-
+    'フェニックスの涙を1個使用しますか？' : 'Are you sure you want to use 1 Phenix tears ?',
+    'フェニックスの涙(小)を1個使用しますか？' : 'Are you sure you want to use 1 small Phenix tears ?',
+    'フェニックスの涙(小)を2個使用しますか？' : 'Are you sure you want to use 2 small Phenix tears ?',
+    'フェニックスの涙(小)を3個使用しますか？' : 'Are you sure you want to use 3 small Phenix tears ?',
+    'フェニックスの涙(小)を4個使用しますか？' : 'Are you sure you want to use 4 small Phenix tears ?',
+    'フェニックスの涙(小)を5個使用しますか？' : 'Are you sure you want to use 5 small Phenix tears ?',
     '毎日最初の一回は無料で引くことができるのよ！' : 'Each day, the first Friend Gacha is free !',
     '友情ガチャが回せます' : 'Your daily FREE Friend Gacha has arrived !',
     'コンプリート報酬' : 'Complete set reward',
@@ -138,7 +198,7 @@ var words = {
     'ギルド情報' : 'Guild informations',
     'レリック情報' : 'Relics informations',
     '※レイドボス情報は出現している期間内のみ表示されます' : '※Raid boss informations is only visible when that boss is available.',
-
+'ハイスクールDxDについて' : 'Highschool DxD FAQ',
     'レイドボス情報' : 'Boss informations',
     '所属ギルド名:' : 'Guild name: ',
     'ギルドメンバー数:' : 'Guild members: ',
@@ -151,7 +211,6 @@ var words = {
     '「フリード・セルゼン」撃破回数:' : 'Freed Sellzen defeats: ',
     '「紫藤イリナ」撃破回数:' : 'Irina defeats: ',
 // Maybe something else, need to check !!!
-    'シリーズ' : ' Series',
     'レリックコンプ:' : 'Discovered relics: ',
     '奪われたレリック:' : 'Lost relics: ',
     'ドレスブレイク回数:' : 'Dress break counter: ',
@@ -162,8 +221,33 @@ var words = {
     'ドラゴンの血(小)を使用しますか？' : 'Do you want to use a small Dragon blood ?',
     ' レーティングゲームトップ ' : 'Go to the rating games',
     '戦闘履歴' : 'Fight History',
+    'ディメンションダンジョン全クリア達成報酬' : 'Dimensional dungeon completion rewards',
+    'ギルド総合ランキング報酬' : 'Guild ranking rewards',
+    'ギルド総合ランキング' : 'Guild ranking',
+    '個人総合ランキング報酬' : 'Final individual ranking rewards',
+    '個人総合ランキング' : 'Final individual ranking',
+    '個人中間ランキング報酬' : 'Halfway individual ranking rewards',
+    '個人中間ランキング' : 'Halfway individual ranking',
+    '現在のアフターPt' : 'Total points earned',
     'ランキング' : 'Ranking',
     'おすすめのシリーズ' : 'Selected relic set',
+    'シリーズ' : ' Series',
+    '友達申請承認' : 'Friend request approval',
+    '[初級悪魔]だじさんからの友達申請を承認しますがよろしいですか？' : 'Are you sure you want to accept this friend request ?',
+    '友達申請の承認完了' : 'Friend request approved !',
+    '友達申請の承認が完了しました。' : 'You now have one more friend !',
+    'ギルド掲示板投稿完了' : 'Message sent !',
+    '掲示板に書き込みを行いました。' : 'Message has been sent !',
+/// EVENT OIL
+    '遊びかた' : 'Event guide',
+    'イベント報酬' : 'Event rewards',
+    '最大ディメンションアイテム数' : 'Max oil in 1 dimension run',
+    'ディメンションダンジョンを進めて' : 'Progress & complete the dimensional dungeon !',
+    '『アロマオイル』大量獲得チャンス!' : 'Oil massive loot rate !', 
+    'さらに最終ボス撃破で限定カードGET!' : 'Get the limited card by defeating the final boss !',
+    '「アロマオイル」あと' : 'Dimensional dungeon trigerred in  ',
+    'アロマオイル' : 'Owned oil units:',
+    '友達申請がきています' : 'You received a friend request !',
     'レリックを変更する' : 'Choose another relic set',
     '期間限定!獲得ギルドガチャPt2倍!!' : 'Limited time ! Get Guild Gacha Points x2 !!',
     '※1日に引けるギルドガチャの回数は3回までです。' : 'You can draw up to 3 Guild Gacha per day.',
@@ -182,6 +266,8 @@ var words = {
     '友達に応援要請を送りました。' : 'You asked your friends to send you AP.',
     '次回の応援要請は' : 'Your next available request will be on',
     'に使用できます。' : '',
+    'レイドボス出現中!' : 'Boss !',
+    '逃亡まで' : 'Time left ',
     '【一時保管所とは】' : '[What\'s the temporary box ?]',
     '・設置期限を過ぎると一時保管所のカード/アイテムは全て削除されます。' : 'Please, note there\'s a time limit to retrieve items from the Temporary box.',
     '・一時保管所にあるアイテム/カードはプレゼントBOXに移動することができます。' : '・Items in the temporary box will move to the Gift box.',
@@ -189,6 +275,7 @@ var words = {
     '・2/29(月)の仕様変更時に消失したアイテム/カードが保管されます。' : '2/29(Monday) - lost items should appear in the Temporary box.',
     '・一時保管庫の使用期限は' : 'Please, note that ',
     '友情P&その他(' : 'Friends points & others : (',
+    '【発動スキル】' : '【Skills trigered:】',
     'イベント開催中' : 'Event available',
     'クエストトップ' : 'Back to quests',
     'ノーマルクエスト' : 'Quest',
@@ -213,7 +300,7 @@ var words = {
     '応援依頼はありません。' : 'There\'s no AP gift request pending',
     '応援リスト' : 'AP Gift page',
     '別の対戦相手を探す' : 'Fight another opponent',
-    '通常攻撃' : 'Normal attack',
+    '通常攻撃' : 'Attack x1',
     '魔力20' : '-20 MP',
     '魔力40' : '-40 MP',
     '友達の力を借りて攻撃' : 'Boosted attack',
@@ -224,9 +311,10 @@ var words = {
     '応援依頼' : 'Friends requests',
     'ボイス付きカード：' : 'Cards with voice: ',
     'ガチャトップ' : 'Back to the shop',
+    'ドラゴンの血(小)を使う' : 'Use a small Dragon blood',
+    'フェニックスの涙(小)：残り' : 'Small Phenix tears: ',
     'フェニックスの涙(小)' : 'Small Phenix tears',
     'ドラゴンの血(小)' : 'Small Dragon blood',
-    'フェニックスの涙(小)：残り' : 'Small Phenix tears: ',
     'フェニックスの涙：残り' : 'Phenix tears: ',
     '行動力100%回復' : 'Regain 100% of your AP',
     'フェニックスの涙を' : 'Use ',
@@ -236,7 +324,6 @@ var words = {
     '行動力は時間がたてば徐々に回復していくわ。' : 'You\'ll recover your Action points over time.',
     '全回復まであと ' : 'Your AP will be full in ',
     '魔力全回復まであと' : 'Your MP will be full in ',
-    'ドラゴンの血(小)を使う' : 'Use a small Dragon blood',
     'ドラゴンの血を使う' : 'Use a Dragon blood',
     '結界魔法陣を購入する' : 'Buy def. scroll',
     '(次のLvまで' : '(Next level in ',
@@ -250,6 +337,7 @@ var words = {
     'ＨＰ20%増加中！' : 'Increase HP by 20% !',
     'イベントクエストへ' : 'Back to event\'s quest',
     'カード属性変更/アイテム選択' : 'Card Promotion',
+    'レジェンドチケット' : 'Legendary ticket',
     '選択したカード' : 'Selected card',
     '全員を応援して行動力回復' : 'Giving AP to everyone !',
     ' よ。' : 'よ。',
@@ -279,6 +367,7 @@ var words = {
     'ステージ一覧' : 'Stage list',
     '獲得ピース' : 'Money per action',
     '進行度' : 'Progress',
+    '真夜中のビスチェガール' : 'Midnight\'s Strapless',
 //// LEVELUP TEXT
     '友達を応援すると応援した友達の行動力が' : 'Give AP to your friends !',
     '5回復' : ' 5 AP are given to each friend in the list !',
@@ -290,8 +379,12 @@ var words = {
     'レーティングゲームとは' : 'Rating game FAQ',
     '対戦相手を更新' : 'Refresh opponents list',
     '秘密の招待状 コンプリート報酬' : 'Secret Invitation set Rewards',
-
+'レアリティ：' : 'Rarity: ',
 //// SHOP
+    '掲示板に書き込む' : 'Write a message',
+    '投稿内容は投稿後14日間表示されます' : 'After 14 days, posts are deleted.',
+    '過去の投稿' : 'Older posts',
+    '過去の履歴' : 'Previous history',
     'リミットガチャ' : 'Limited Gacha',
     'Boost!x6ガチャ' : 'Boost ! X6 Gacha',
     '今月' : 'This month',
@@ -349,6 +442,8 @@ var words = {
     'ギルドガチャについて' : 'About guild Gacha',
     '次のLvまで' : 'Next level in ',
     '取り出すカードを選択してください' : 'Select at least one card if you want to withdraw :)',
+    '掲示板をみる' : 'Back to message board',
+    'ギルド掲示板投稿' : 'Post a guild message',
     'ギルド掲示板' : 'Guild message board',
     'ギルドリーダー' : 'Guild leader',
     'ギルドメンバー　' : 'Guild members',
@@ -405,7 +500,6 @@ var words = {
     '選択アイテム' : 'Available items',
     '指定カードの悪魔の駒を好きな属性に変更することができます' : 'Allows you to change the evil piece type.',
     'ギルドPt' : 'Guild points',
-    '☆今だけ獲得ギルドガチャPt2倍☆' : '☆ Guild Gacha X2 Limited Time !☆',
     '対戦' : 'Fight',
     'デッキ編成 カード入替' : 'Deck Organization : card change',
     'デッキ編成' : 'Deck Organization',
@@ -440,9 +534,9 @@ var words = {
     '魔力が20回復します' : 'This item restore 20% of your Combat Points.',
     '合成･禁手･進化' : 'Balance Breakers',
     '一言コメントを編集する' : 'Edit your own message',
-
+'友達申請' : 'Friend request',
     '一言コメント' : 'Personnal message',
-
+    'アイテム一覧へ' : 'Go to your inventory',
     'セイクリッドギア' : 'Sacred Gear',
     'カードに合成することで、効率良く成長させることができます' : 'Used as synthesis material to give Experience to your evil pieces. Each gives 100 Experience.',
     'チケットでレアカードを手に入れよう!' : '',
@@ -461,6 +555,7 @@ var words = {
     'チケット' : 'Gacha Tickets',
     '各種報酬で獲得した' : 'Try to get the extra rares cards !',
     'ガチャ履歴確認' : 'Card history',
+    'ガチャをまわす' : 'Go to gacha',
     'ガチャ' : 'Gacha',
     '注意事項' : 'Notes',
     'ラインナップ' : 'Lineup',
@@ -511,9 +606,9 @@ var words = {
     '進化度1のみ' : 'Evolution stade 1 Only',
     'ボイス付き' : 'With voice',
     'リベンジ' : 'Revenge ',
+    '進化度:' : 'Stade:',
     '進化度' : 'Evolution stade',
     'ベースカードに選択する' : 'Select this card',
-    'units' : ' owned',
     '売却する' : 'Sell',
     '信頼度' : 'Reliability',
     '成長度' : 'XP bar',
@@ -538,6 +633,9 @@ var words = {
     'ピース' : 'Money',
     '友情Ptとは' : 'Friend Points FAQ',
     'プレゼントが届いています' : 'There\'s still items in your Gift Box !',
+//// ERROR PAGE
+    '画面表示の際、エラーが発生しました、恐れ入りますがマイページに戻って再度アクセスをお願い致します。' : 'An error has occured, would you kindly refresh ?',
+    'エラー' : 'Error',
 
 //// GIFT BOX
     '転生進化とは' : 'Reincarnation FAQ',
@@ -607,6 +705,8 @@ var words = {
     'お誘いの取り下げ' : 'Cancelling friend invitation',
     'さんへの友達へのお誘いを取り下げます。' : ' won\'t be able to accept your request anymore.',
     '取り下げる' : 'Confirm',
+    '友達申請の承認完了' : 'One more friend !',
+    'さんからの友達申請を承認しますがよろしいですか？' : ' will be added to your friends. Are you sure you want to accept this invitation ?',
     'よろしいですか？' : 'Are you sure you want to cancel your invitation ?',
     '無所属' : 'Without guild',
     '友達とは' : 'Friends FAQ',
@@ -618,6 +718,7 @@ var words = {
     '申請中' : 'Pending',
     '承認待ちのユーザはいません' : 'There is no friend application waiting for your approval.',
     '承認待' : 'Waiting your approval',
+    'ギルド勧誘' : 'Guild inv.',
     'ギルド' : 'Guild',
     '申請を取り消す' : 'Cancel the application',
     'Lv昇順で並べ替え' : 'Sort by lvl (ascending order)',
@@ -631,18 +732,27 @@ var words = {
     '友達登録数 ' : 'Friendlist size',
     'あいさつ' : 'Send a message',
     'プレゼントBOX' : 'Gift Box',
+    '前半ディメンションダンジョン全クリア報酬' : 'Dimensional dungeon first part rewards',
+    '後半ディメンションダンジョン全クリア報酬' : 'Dimensional dungeon last part rewards',
+    '前半' : 'First part',
+    '後半' : 'Last part',
 // Profile effect page (pvp title ?)
     '効果:' : 'Effect: ',
     '勝' : ' Wins ',
     '攻撃:' : 'As attacker: ',
     '防衛:' : 'As defenser: ',
     '敗' : ' Defeats ',
+    '達成率' : 'Progression',
+// For gacha boxes
+    'エクスプロージョン' : 'Explosion',
     '戦' : 'Fight',
     '詳細' : 'Details',
     'ソケット' : 'Socket',
     '空' : 'Empty',
     'ｺｽﾄ' : 'Cost',
     '交換する' : 'Get',
+    '承認する' : 'Approve',
+    '断る' : 'Deny',
     '分' : ' minutes',
     '更新する' : 'Refresh',
     'コスト' : 'Cost',
@@ -652,6 +762,9 @@ var words = {
     '個' : ' unit(s)',
     '回' : ' times',
     '体' : ' bodies',
+    'あと' : 'You still need ',
+    'つでコンプリート' : ' relics to complete this set !',
+    '本' : ' Oil units',
 };
 
 
@@ -696,9 +809,17 @@ for (var i = 0; i < tags.length; i++) {
 // EVENT PICS
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fdiary_banner.png%3F67.91', 'http://dxdmobage.xp3.biz/Writewin.png');
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fdiary_banner_gray.png%3F67.91', 'http://dxdmobage.xp3.biz/Writewingrey.png');
+// TO be changed, picture is for the daily missions achieved !
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fmission_failure.png%3F67.91', 'http://dxdmobage.xp3.biz/Missiondaily.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fmission_success.png%3F67.91', 'http://dxdmobage.xp3.biz/Missiondaily.png');
     
-
+//// Month login rewards
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc1.png', 'http://dxdmobage.xp3.biz/Dailyreward.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc2.png', 'http://dxdmobage.xp3.biz/Tomorrow.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc3.png', 'http://dxdmobage.xp3.biz/Gridrewards.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fday-L.png', 'http://dxdmobage.xp3.biz/Days.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fday-S.png', 'http://dxdmobage.xp3.biz/Days.png');
+////
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fhoseichu.png', 'http://dxdmobage.xp3.biz/Rolebonus.png');
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fleader.png', 'http://dxdmobage.xp3.biz/Leader.png');
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fhogo.png', 'http://dxdmobage.xp3.biz/Protected.png');
@@ -709,6 +830,9 @@ for (var i = 0; i < tags.length; i++) {
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_04.jpg', 'http://dxdmobage.xp3.biz/Shop.png');
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_mypage.png', 'http://dxdmobage.xp3.biz/HomePage.png');
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_pink.png', 'http://dxdmobage.xp3.biz/Back to main page.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_orange.png', 'http://dxdmobage.xp3.biz/Back to main pageorange.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpagetop.png', 'http://dxdmobage.xp3.biz/Scroll_to_top.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_orange.jpg%3F67.91', 'http://dxdmobage.xp3.biz/Scroll_to_toporange.png');
+    
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_announce.png', 'http://dxdmobage.xp3.biz/HomePage.png');
-
 }
