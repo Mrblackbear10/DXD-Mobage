@@ -720,10 +720,5 @@ for (var i = 0; i < tags.length; i++) {
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FT%2F6255_OgW0MOgtiXoK2waT5JPqy9sEJuXOlbE7.jpg', 'http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FT%2F6335_AW0rVtq8oFdF5HD3Q0fD5cUCSH3AXhXB.jpg');
     tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FM%2F6255_OgW0MOgtiXoK2waT5JPqy9sEJuXOlbE7.jpg', 'http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FM%2F6335_AW0rVtq8oFdF5HD3Q0fD5cUCSH3AXhXB.jpg');
 
-    tags[i].src = tags[i].src.replace('http://mb.hsdd.maql-games.jp/sp/image/cards/L1/6273_7jiTqD0HcswJor7jJuuwJup51XxGqxOV.jpg', 'http://mb.hsdd.maql-games.jp/sp/image/cards/L1/6341_e96ksJ5X0rWMYlfcwwPEM7PB7yioiDNh.jpg');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FM%2F6273_7jiTqD0HcswJor7jJuuwJup51XxGqxOV.jpg', 'http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FM%2F6341_e96ksJ5X0rWMYlfcwwPEM7PB7yioiDNh.jpg');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FT%2F6273_7jiTqD0HcswJor7jJuuwJup51XxGqxOV.jpg', 'http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FT%2F6341_e96ksJ5X0rWMYlfcwwPEM7PB7yioiDNh.jpg');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FM%2F6273_7jiTqD0HcswJor7jJuuwJup51XxGqxOV.jpg', 'http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcards%2FM%2F6341_e96ksJ5X0rWMYlfcwwPEM7PB7yioiDNh.jpg');
-
 }
 
