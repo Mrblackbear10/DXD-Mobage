@@ -44,9 +44,6 @@ var Title = str.slice(0, 3);
 $('#count_extra_quest3 > p').eq(1).prop('title', Title + " Oil units");
 }
 
-
-
-
 //SKIP Friend Gacha cardlist
 $('#tpl_gacha-complete > section:nth-child(10)').html('');
 // Out of AP : Use Phenix tears !
