@@ -3,27 +3,6 @@
 <script src="js.cookie.js"></script>
 <script src="jquery.switchButton.js"></script>
 </head>
-<body>
-
-
-<legend>DXD configuration page Name</legend>
-
-
-Option available:
-
-
-
-
-<div class="switch-wrapper">
-  <input type="checkbox" id = "Gachad" value="Gacha"> fast Gacha
-</div>
-
-
-
-<button id="button1id" name="button1id" class="btn btn-success" onclick="save()">Save config</button>
-<button id="button2id" name="button2id" class="btn btn-danger" onclick="unsave()">Reset config</button>
-
-
 <script>
 var name = Cookies.get('name');
 var Gacha = Cookies.get('Gacha');
