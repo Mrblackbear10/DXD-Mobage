@@ -1,73 +1,54 @@
-<script type="text/javascript">
-<!--
-/* Copyright http://www.perlscriptsjavascripts.com 
-Free and commercial Perl and JavaScripts */
-  
-function getCookie(w){
-	cName = "";
-	pCOOKIES = new Array();
-	pCOOKIES = document.cookie.split('; ');
-	for(bb = 0; bb < pCOOKIES.length; bb++){
-		NmeVal  = new Array();
-		NmeVal  = pCOOKIES[bb].split('=');
-		if(NmeVal[0] == w){
-			cName = unescape(NmeVal[1]);
-		}
-	}
-	return cName;
+<head>
+<script src="jquery-2.2.3.min.js"></script>
+<script src="js.cookie.js"></script>
+<script src="jquery.switchButton.js"></script>
+</head>
+<body>
+
+
+<legend>DXD configuration page Name</legend>
+
+
+Option available:
+
+
+
+
+<div class="switch-wrapper">
+  <input type="checkbox" id = "Gachad" value="Gacha"> fast Gacha
+</div>
+
+
+
+<button id="button1id" name="button1id" class="btn btn-success" onclick="save()">Save config</button>
+<button id="button2id" name="button2id" class="btn btn-danger" onclick="unsave()">Reset config</button>
+
+
+<script>
+var name = Cookies.get('name');
+var Gacha = Cookies.get('Gacha');
+
+if (Gacha == "true") {
+$("#Gachad").prop("checked", true);	
+} else {
+$("#Gachad").prop("checked", false);	
 }
 
-function printCookies(w){
-	cStr = "";
-	pCOOKIES = new Array();
-	pCOOKIES = document.cookie.split('; ');
-	for(bb = 0; bb < pCOOKIES.length; bb++){
-		NmeVal  = new Array();
-		NmeVal  = pCOOKIES[bb].split('=');
-		if(NmeVal[0]){
-			cStr += NmeVal[0] + '=' + unescape(NmeVal[1]) + '; ';
-		}
-	}
-	return cStr;
-}
-
-function setCookie(name, value, expires, path, domain, secure){
-	cookieStr = name + "=" + escape(value) + "; ";
-	
-	if(expires){
-		expires = setExpiration(expires);
-		cookieStr += "expires=" + expires + "; ";
-	}
-	if(path){
-		cookieStr += "path=" + path + "; ";
-	}
-	if(domain){
-		cookieStr += "domain=" + domain + "; ";
-	}
-	if(secure){
-		cookieStr += "secure; ";
-	}
-	
-	document.cookie = cookieStr;
-}
-
-function setExpiration(cookieLife){
-    var today = new Date();
-    var expr = new Date(today.getTime() + cookieLife * 24 * 60 * 60 * 1000);
-    return  expr.toGMTString();
-}
-// -->
 </script>
+<Script>
+// stocke les cookies
+function save() {
+	if ($('#Gachad').is(":checked")){	
+	Cookies.set('Gacha', "true");		
+} else {
+	Cookies.set('Gacha', "false");
+}
+}
 
-<script type="text/javascript">
-<!--
-allCookies = printCookies();
-document.write(allCookies);
-
-// delete a specific cookie by setting it's expiration date to the past
-// and defining a blank value
-setCookie('cookieName', '', -1);
-
-// see notes on deleting cookies below if your cookies are not being deleted
-// -->
+// fonction reset (qui marche pas o/)
+function unsave() {
+Cookies.set('Name', "d");
+Cookies.set('Gacha', "false");
+}
 </script>
+</body>
