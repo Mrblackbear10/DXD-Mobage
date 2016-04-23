@@ -1,3 +1,5 @@
+var URL = window.location.href;
+
 // Checking cookies for plugins
 var autofight = Cookies.get('Autofight');
 
