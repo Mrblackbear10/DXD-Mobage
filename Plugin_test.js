@@ -1,1 +1,1 @@
-$('#tpl_announce').html('');
+$('#tpl_announce').html('has been updated!');
