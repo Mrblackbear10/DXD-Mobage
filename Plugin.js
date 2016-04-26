@@ -1,3 +1,6 @@
+// @require        https://code.jquery.com/jquery-2.1.4.min.js
+// @require        https://raw.githubusercontent.com/js-cookie/js-cookie/master/src/js.cookie.js
+// @require        https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/plugin.js
 //// Store URL and BodyID for useful use later ;
 var URL = window.location.href;
 var bodyId = document.body.id;
