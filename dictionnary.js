@@ -192,8 +192,8 @@ var friendlist = {
 
 // Quest progression
 var quest = {
-    '友達申請' : 'send friend request',
-    'ギルド勧誘' : 'send guild request',
+    '友達申請' : 'Friend request',
+    'ギルド勧誘' : 'Guild request',
     'と出会った！' : 'has been encountered !',
     'レアリティ：' : 'Rarity: ',
     '獲得ピース' : 'Money per action',
