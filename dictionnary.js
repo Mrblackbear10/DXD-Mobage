@@ -583,6 +583,9 @@ var cards = {
 
 // GiftBox
 var giftBox = {
+    'プロモーション' : 'Promotion item',
+
+'フェニックスの涙' : 'Phenix tears',
     'レジェンドチケット' : ' Legendary ticket',
     'ピース' : ' Money',
     'セイクリッドギア' : ' Sacred Gear',
