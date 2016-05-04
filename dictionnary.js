@@ -192,7 +192,9 @@ var friendlist = {
 
 // Quest progression
 var quest = {
-    '行動力' : 'AP ',
+    '友達申請' : 'send friend request',
+    'ギルド勧誘' : 'send guild request',
+    'と出会った！' : 'has been encountered !',
     'レアリティ：' : 'Rarity: ',
     '獲得ピース' : 'Money per action',
     'を手にいれた！' : 'was just found !',
@@ -203,6 +205,7 @@ var quest = {
     '今だけ獲得EXP2倍！' : 'Limited time EXP x2 !',
     '・割り振りPt' : '・Allocations points ',
     '行動力 、魔力が全回復した！' : 'Your AP bar is filled up.',
+    '行動力' : 'AP ',
     'もうすぐカード所持数が上限に達します。' : 'Your card reserve is nearly full !',
     'カード所持数が上限を超えたため売却しました。' : 'That card has been sold because your card reserve was full !',
     'ピース' : 'Money:',
