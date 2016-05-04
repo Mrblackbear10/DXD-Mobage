@@ -584,14 +584,11 @@ var cards = {
 // GiftBox
 var giftBox = {
     'プロモーション' : 'Promotion item',
-
-'フェニックスの涙' : 'Phenix tears',
     'レジェンドチケット' : ' Legendary ticket',
     'ピース' : ' Money',
     'セイクリッドギア' : ' Sacred Gear',
     'ガチャをまわす' : 'Go to gacha',
     '禁手 バランス・ブレイカ' : 'Balance Breaker',
-
     '■以下のものを受け取りました' : 'You received the following:',
     '◆プレゼントBOX状況': '◆Gift box state',
     '友情P&その他(' : 'Friends points & others : (',
@@ -608,6 +605,7 @@ var giftBox = {
     'プレゼントBOXの容量が1000件を超えた場合' : 'If your box exceeds 1000 items limits,',
     'フェニックスの涙(小)' : 'Small Phenix tears',
     'ドラゴンの血(小)' : 'Small Dragon blood',
+    'フェニックスの涙' : 'Phenix tears',
     'ドラゴンの血' : 'Dragon Blood',
 
     '【一時保管所とは】' : '[What\'s the temporary box ?]',
