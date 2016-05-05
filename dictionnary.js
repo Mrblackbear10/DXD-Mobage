@@ -192,6 +192,7 @@ var friendlist = {
 
 // Quest progression
 var quest = {
+    'カード所持数が上限に達しました。' : 'Your inventory is now full !',
     '友達申請' : 'Friend request',
     'ギルド勧誘' : 'Guild request',
     'と出会った！' : 'has been encountered !',
