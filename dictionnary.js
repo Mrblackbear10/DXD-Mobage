@@ -205,7 +205,7 @@ var quest = {
     'レベルアップ' : 'Level Up !',
     '今だけ獲得EXP2倍！' : 'Limited time EXP x2 !',
     '・割り振りPt' : '・Allocations points ',
-    '行動力 、魔力が全回復した！' : 'Your AP bar is filled up.',
+    '行動力、魔力が全回復した！' : 'Your AP bar is filled up.',
     '行動力' : 'AP ',
     'もうすぐカード所持数が上限に達します。' : 'Your card reserve is nearly full !',
     'カード所持数が上限を超えたため売却しました。' : 'That card has been sold because your card reserve was full !',
