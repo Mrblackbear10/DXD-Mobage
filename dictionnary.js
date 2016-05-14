@@ -200,6 +200,7 @@ var quest = {
     '獲得ピース' : 'Money per action',
     'を手にいれた！' : 'was just found !',
     'カード枚数：' : 'Cards owned:',
+    'まだ続ける' : 'Continue this quest',
     '戻る' : 'Back',
     '残り' : 'Time left ',
     'レベルアップ' : 'Level Up !',
