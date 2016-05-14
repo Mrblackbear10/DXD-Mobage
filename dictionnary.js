@@ -871,6 +871,7 @@ var diary = {
     'イベント期間中は日記を付けるだけで' : 'During events, you can get free bonus',
     '報酬がもらえるぞ!' : 'just by posting diaries !',
     'ダイアリー報酬' : 'Diary reward',
+    'フェニックスの涙(小)×10' : 'Small Phenix Tears x10',
     'ドラゴンの血(小)×10' : 'Small Dragon Blood x10',
     '報酬を受け取る' : 'To gift box',
     'イベントTOPへ' : 'To event mainpage',
