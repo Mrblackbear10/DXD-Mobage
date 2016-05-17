@@ -964,6 +964,7 @@ var cardata = {
     '元浜' : 'Motohama',
     'ネル' : 'Nel',
     'イル' : 'Ile',
+    'ザトゥージ' : 'Familiar Master',
 // Not sure
     '名護' : 'Nago',
     
