@@ -367,6 +367,7 @@ var ratingGame = {
     'バトルアニメーションをスキップ' : 'Skip fight animations',
     '別のレリックを狙う ' : 'Choose another relic set',
     '魔力' : 'Mp',
+    '行動力' : 'AP',
     '個' : ' unit(s)',
     '詳細結果' : 'Result details',
     '【発動スキル】' : '【Skills trigered:】',
