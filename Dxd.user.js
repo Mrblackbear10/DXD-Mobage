@@ -7,7 +7,7 @@
 // @version        0.6.1
 // @require        https://code.jquery.com/jquery-2.1.4.min.js
 // @require        https://raw.githubusercontent.com/js-cookie/js-cookie/master/src/js.cookie.js
-// @icon           http://dxdmobage.xp3.biz/ico.ico
+// @icon           https://storage.googleapis.com/mobagedxd/ico.ico
 // @downloadURL    https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
 // @updateURL      https://raw.githubusercontent.com/Tracehunter/DXD-Mobage/master/main.js
 // ==/UserScript==
@@ -24,24 +24,24 @@ var bodyId = document.body.id;
 // if (bodyId === "tpl_raid_battle-ready") {goNext(1,1,4);}
 
 //// Main menu reconstruction, to be able to use specific buttons.
-$('.modalMenuBtn').html('<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_list.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/CardList.png" alt="Card list" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_deck.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Decks.png" alt="Decks" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dequipment%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/upgrade.png" alt="Upgrades" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dbalance_break%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Balance%20Breaker.png" alt="Balance Breaker" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_reborn.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Reborn.png" alt="Reincarnation" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_storage_list.html%3Faction%3Dplural%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Collection.png" alt="Collection" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_album.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Album.png" alt="Album" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fitem.html%3Flist_type%3D6%26chkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Inventory.png" alt="Inventory" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fguild_top.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Guild.png" alt="Guild" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Ffriend_list.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Friendlist.png" alt="Friendlist" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fprofile.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Profile.png" alt="Profile" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Finvitation.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/RAF.png" alt="RAF" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fpresent.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Giftbox.png" alt="Giftbox" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fhelp.html"><img src="http://dxdmobage.xp3.biz/Help.png" alt="Help" width="67" height="44"></a></li> \
-        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fannounce.html%3FchkLogin%3Dtrue"><img src="http://dxdmobage.xp3.biz/Announces.png" alt="Announces" width="67" height="44"></a></li> \
-        <li><a target="_blank" href="https://dxdmobage.wordpress.com/"><img src="http://dxdmobage.xp3.biz/Guide.png" alt="Guide" width="67" height="44"></a></li> \
-        <li><a href="http://g12014827.sp.pf.mbga.jp/?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fspecial.html%3Fname%3Dlogin_bonus"><img src="http://dxdmobage.xp3.biz/Login Bonus.png" alt="Login Bonus" width="67" height="44"></a></li> \
-        <li><a href="https://github.com/Tracehunter/DXD-Mobage/raw/master/Dxd.user.js"><img src="http://dxdmobage.xp3.biz/Ver06.png" alt="V0.6" width="67" height="44"></a></li>');
+$('.modalMenuBtn').html('<li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_list.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/CardList.png" alt="Card list" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_deck.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Decks.png" alt="Decks" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dequipment%26chkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/upgrade.png" alt="Upgrades" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_composition.html%3Faction%3Dbalance_break%26chkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Balance%20Breaker.png" alt="Balance Breaker" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_reborn.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Reborn.png" alt="Reincarnation" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_storage_list.html%3Faction%3Dplural%26chkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Collection.png" alt="Collection" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fcard_album.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Album.png" alt="Album" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fitem.html%3Flist_type%3D6%26chkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Inventory.png" alt="Inventory" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fguild_top.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Guild.png" alt="Guild" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Ffriend_list.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Friendlist.png" alt="Friendlist" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fprofile.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Profile.png" alt="Profile" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Finvitation.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/RAF.png" alt="RAF" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fpresent.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Giftbox.png" alt="Giftbox" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fhelp.html"><img src="https://storage.googleapis.com/mobagedxd/Help.png" alt="Help" width="67" height="44"></a></li> \
+        <li><a href="?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fannounce.html%3FchkLogin%3Dtrue"><img src="https://storage.googleapis.com/mobagedxd/Announces.png" alt="Announces" width="67" height="44"></a></li> \
+        <li><a target="_blank" href="https://dxdmobage.wordpress.com/"><img src="https://storage.googleapis.com/mobagedxd/Guide.png" alt="Guide" width="67" height="44"></a></li> \
+        <li><a href="http://g12014827.sp.pf.mbga.jp/?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fspecial.html%3Fname%3Dlogin_bonus"><img src="https://storage.googleapis.com/mobagedxd/Login Bonus.png" alt="Login Bonus" width="67" height="44"></a></li> \
+        <li><a href="https://github.com/Tracehunter/DXD-Mobage/raw/master/Dxd.user.js"><img src="https://storage.googleapis.com/mobagedxd/Ver06.png" alt="V0.6" width="67" height="44"></a></li>');
 
 //SKIP Friend Gacha cardlist
 //$('#tpl_gacha-complete > section:nth-child(10)').html('');
@@ -53,7 +53,7 @@ $('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.
 $('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(4)>a').html('<span style="font-size:10px;">Use 4<br>80% AP</span>');
 $('#tpl_quest_shortage_active > section:nth-child(11) > dl > dd > ul.btn2Column.mt5 > li:nth-child(5)>a').html('<span style="font-size:10px;">Use 5<br>100% AP</span>');
 $('#tpl_raid_battle-ready > section:nth-child(18) > div:nth-child(2) > ul > li:nth-child(1) > a').html();
-$('#reward_calendar > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > p').html('<img src="http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fnumber%2F1.png" height="15"><img src="http://dxdmobage.xp3.biz/Day.png" height="15">');
+$('#reward_calendar > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > p').html('<img src="http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fnumber%2F1.png" height="15"><img src="https://storage.googleapis.com/mobagedxd/Day.png" height="15">');
 
 
 $('#tpl_raid_battle-ready > section:nth-child(14) > dl:nth-child(1) > dd > ul > li:nth-child(1) > a').html('<strong>Attack</strong><br>-20MP');
@@ -83,20 +83,20 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);}
 
-addGlobalStyle('.btnVoiceLarge {width: 320px;height: 28px;background: url("http://dxdmobage.xp3.biz/Voice.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;cursor: pointer;}');
-addGlobalStyle('#container > section:nth-child(4) > nav > ul > li.normalBtn {padding-top: 40px;width: 95px;height: 55px;margin-left: 17px;background: url("http://dxdmobage.xp3.biz/Synthesis.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.btnSusumuLarge a {display: block;width: 202px;height: 46px;background: url("http://dxdmobage.xp3.biz/Action.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.mainContentBtn li:nth-child(5) {padding-top: 40px;width: 95px;height: 55px;margin-right: 18px;background: url("http://dxdmobage.xp3.biz/gacha.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('#modalMenu > nav.modalMainContentBtn.bnr > ul > li.normalBtn {padding-top: 40px;width: 95px;height: 55px;margin-left: 17px;background: url("http://dxdmobage.xp3.biz/Synthesis.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.mainContentBtn li:nth-child(3) {padding-top: 40px;width: 95px;height: 55px;margin-left: 17px;background: url("http://dxdmobage.xp3.biz/Synthesis.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('#gouseiRed {position: absolute; top: 1px; right: 2.5px; width: 43px; height: 16px; border-radius: 2px; overflow: hidden; pointer-events: none;background: url("http://dxdmobage.xp3.biz/XP2.png");-webkit-background-size: 100% auto;}');
-addGlobalStyle('#gachaRed {position: absolute; top: 1px; right: 2.5px; width: 43px; height: 16px; border-radius: 2px; overflow: hidden; pointer-events: none;background: url("http://dxdmobage.xp3.biz/gacha2.png");-webkit-background-size: 100% auto;}');
-addGlobalStyle('.btnGachaFree a {width: 202px;height: 45px;background: url("http://dxdmobage.xp3.biz/Freegacha.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.mainContentBtn li:nth-child(4) {padding-top: 40px;width: 95px;height: 55px;background: url("http://dxdmobage.xp3.biz/Evolution.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.mainContentBtn li:nth-child(1) {width: 160px;height: 59px;background: url("http://dxdmobage.xp3.biz/Quest.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.mainContentBtn li:nth-child(2) {width: 160px;height: 59px;background: url("http://dxdmobage.xp3.biz/PVP.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
-addGlobalStyle('.btnSusumuOrange a {display: block;width: 196px;height: 39px;background: url("http://dxdmobage.xp3.biz/Action_gold.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;margin: 4px 0;}');
-addGlobalStyle('.btnSusumuBlue a {display: block;width: 196px;height: 38px;background: url("http://dxdmobage.xp3.biz/Action_blue.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;margin: 4px 0;}');
+addGlobalStyle('.btnVoiceLarge {width: 320px;height: 28px;background: url("https://storage.googleapis.com/mobagedxd/Voice.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;cursor: pointer;}');
+addGlobalStyle('#container > section:nth-child(4) > nav > ul > li.normalBtn {padding-top: 40px;width: 95px;height: 55px;margin-left: 17px;background: url("https://storage.googleapis.com/mobagedxd/Synthesis.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.btnSusumuLarge a {display: block;width: 202px;height: 46px;background: url("https://storage.googleapis.com/mobagedxd/Action.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.mainContentBtn li:nth-child(5) {padding-top: 40px;width: 95px;height: 55px;margin-right: 18px;background: url("https://storage.googleapis.com/mobagedxd/gacha.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('#modalMenu > nav.modalMainContentBtn.bnr > ul > li.normalBtn {padding-top: 40px;width: 95px;height: 55px;margin-left: 17px;background: url("https://storage.googleapis.com/mobagedxd/Synthesis.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.mainContentBtn li:nth-child(3) {padding-top: 40px;width: 95px;height: 55px;margin-left: 17px;background: url("https://storage.googleapis.com/mobagedxd/Synthesis.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('#gouseiRed {position: absolute; top: 1px; right: 2.5px; width: 43px; height: 16px; border-radius: 2px; overflow: hidden; pointer-events: none;background: url("https://storage.googleapis.com/mobagedxd/XP2.png");-webkit-background-size: 100% auto;}');
+addGlobalStyle('#gachaRed {position: absolute; top: 1px; right: 2.5px; width: 43px; height: 16px; border-radius: 2px; overflow: hidden; pointer-events: none;background: url("https://storage.googleapis.com/mobagedxd/gacha2.png");-webkit-background-size: 100% auto;}');
+addGlobalStyle('.btnGachaFree a {width: 202px;height: 45px;background: url("https://storage.googleapis.com/mobagedxd/Freegacha.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.mainContentBtn li:nth-child(4) {padding-top: 40px;width: 95px;height: 55px;background: url("https://storage.googleapis.com/mobagedxd/Evolution.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.mainContentBtn li:nth-child(1) {width: 160px;height: 59px;background: url("https://storage.googleapis.com/mobagedxd/Quest.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.mainContentBtn li:nth-child(2) {width: 160px;height: 59px;background: url("https://storage.googleapis.com/mobagedxd/PVP.png");-webkit-background-size: 100% auto;background-size: 100% auto;}');
+addGlobalStyle('.btnSusumuOrange a {display: block;width: 196px;height: 39px;background: url("https://storage.googleapis.com/mobagedxd/Action_gold.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;margin: 4px 0;}');
+addGlobalStyle('.btnSusumuBlue a {display: block;width: 196px;height: 38px;background: url("https://storage.googleapis.com/mobagedxd/Action_blue.png") no-repeat 0 0;-webkit-background-size: 100% auto;background-size: 100% auto;margin: 4px 0;}');
 // Main page dictionnary http://g12014827.sp.pf.mbga.jp/?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fmypage.html
 var mainpage = {
     'さんがレリックを奪われたわ!ギルドリベンジのチャンスよ!' : ' has been attacked ! You can avenge him in the Rating Game!',
@@ -1044,81 +1044,81 @@ var tags = document.getElementsByTagName('img');
 for (var i = 0; i < tags.length; i++) {
 
     //// Changing Top Menu
-        tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_menu.png%3Fm%3D1464667775', 'http://dxdmobage.xp3.biz/Menu.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_02.jpg%3Fm%3D1464667775', 'http://dxdmobage.xp3.biz/BTN_Quest.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_03.jpg%3Fm%3D1464667776', 'http://dxdmobage.xp3.biz/BTN_Pvp.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_04.jpg%3Fm%3D1464667776', 'http://dxdmobage.xp3.biz/Shop.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_mypage.png%3Fm%3D1464667776', 'http://dxdmobage.xp3.biz/HomePage.png');
+        tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_menu.png%3Fm%3D1464667775', 'https://storage.googleapis.com/mobagedxd/Menu.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_02.jpg%3Fm%3D1464667775', 'https://storage.googleapis.com/mobagedxd/BTN_Quest.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_03.jpg%3Fm%3D1464667776', 'https://storage.googleapis.com/mobagedxd/BTN_Pvp.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_04.jpg%3Fm%3D1464667776', 'https://storage.googleapis.com/mobagedxd/Shop.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_mypage.png%3Fm%3D1464667776', 'https://storage.googleapis.com/mobagedxd/HomePage.png');
     
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_menu.png', 'http://dxdmobage.xp3.biz/Menu.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_02.jpg', 'http://dxdmobage.xp3.biz/BTN_Quest.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_03.jpg', 'http://dxdmobage.xp3.biz/BTN_Pvp.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_04.jpg', 'http://dxdmobage.xp3.biz/Shop.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_mypage.png', 'http://dxdmobage.xp3.biz/HomePage.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_menu.png', 'https://storage.googleapis.com/mobagedxd/Menu.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_02.jpg', 'https://storage.googleapis.com/mobagedxd/BTN_Quest.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_03.jpg', 'https://storage.googleapis.com/mobagedxd/BTN_Pvp.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_04.jpg', 'https://storage.googleapis.com/mobagedxd/Shop.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_mypage.png', 'https://storage.googleapis.com/mobagedxd/HomePage.png');
 
 
 
 
     //// Changing some buttons using this method too.
     // EVENT PICS
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fdiary_banner.png%3F67.91', 'http://dxdmobage.xp3.biz/Writewin.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fdiary_banner_gray.png%3F67.91', 'http://dxdmobage.xp3.biz/Writewingrey.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fdiary_banner.png%3F67.91', 'https://storage.googleapis.com/mobagedxd/Writewin.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fdiary_banner_gray.png%3F67.91', 'https://storage.googleapis.com/mobagedxd/Writewingrey.png');
     // TO be changed, picture is for the daily missions achieved !
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fmission_failure.png%3F67.91', 'http://dxdmobage.xp3.biz/Missiondaily.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fmission_success.png%3F67.91', 'http://dxdmobage.xp3.biz/Missiondaily.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fmission_failure.png%3F67.91', 'https://storage.googleapis.com/mobagedxd/Missiondaily.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fevent150%2Fmission_success.png%3F67.91', 'https://storage.googleapis.com/mobagedxd/Missiondaily.png');
 
     //// Month login rewards
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc1.png', 'http://dxdmobage.xp3.biz/Dailyreward.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc2.png', 'http://dxdmobage.xp3.biz/Tomorrow.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc3.png', 'http://dxdmobage.xp3.biz/Gridrewards.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fday-L.png', 'http://dxdmobage.xp3.biz/Days.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fday-S.png', 'http://dxdmobage.xp3.biz/Days.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc1.png', 'https://storage.googleapis.com/mobagedxd/Dailyreward.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc2.png', 'https://storage.googleapis.com/mobagedxd/Tomorrow.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fmidashi_desc3.png', 'https://storage.googleapis.com/mobagedxd/Gridrewards.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fday-L.png', 'https://storage.googleapis.com/mobagedxd/Days.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fspecial%2Flogin%2Fbackground%2Fday-S.png', 'https://storage.googleapis.com/mobagedxd/Days.png');
     
     ////
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fhoseichu.png', 'http://dxdmobage.xp3.biz/Rolebonus.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fleader.png', 'http://dxdmobage.xp3.biz/Leader.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fhogo.png', 'http://dxdmobage.xp3.biz/Protected.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_modal_top.jpg', 'http://dxdmobage.xp3.biz/Menu_Totop.png');
-        tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_pink.png', 'http://dxdmobage.xp3.biz/Back to main page.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_orange.png', 'http://dxdmobage.xp3.biz/Back to main pageorange.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fhoseichu.png', 'https://storage.googleapis.com/mobagedxd/Rolebonus.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fleader.png', 'https://storage.googleapis.com/mobagedxd/Leader.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fhogo.png', 'https://storage.googleapis.com/mobagedxd/Protected.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_modal_top.jpg', 'https://storage.googleapis.com/mobagedxd/Menu_Totop.png');
+        tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_pink.png', 'https://storage.googleapis.com/mobagedxd/Back to main page.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_orange.png', 'https://storage.googleapis.com/mobagedxd/Back to main pageorange.png');
 
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_blue.png', 'http://dxdmobage.xp3.biz/backtomainpage_blue.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_blue.jpg', 'http://dxdmobage.xp3.biz/Scroll_to_top_blue.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fback_to_mypage_blue.png', 'https://storage.googleapis.com/mobagedxd/backtomainpage_blue.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_blue.jpg', 'https://storage.googleapis.com/mobagedxd/Scroll_to_top_blue.png');
     tags[i].src = tags[i].src.replace('http://sp.pf-img.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_next_quest_orange.png', 'Next_Quest_Gold.png');
 
 
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpagetop.png', 'http://dxdmobage.xp3.biz/Scroll_to_top.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_announce.png', 'http://dxdmobage.xp3.biz/HomePage.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_orange.jpg%3F67.91', 'http://dxdmobage.xp3.biz/Scroll_to_toporange.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_orange.jpg%3F67.93', 'http://dxdmobage.xp3.biz/Scroll_to_toporange.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpagetop.png', 'https://storage.googleapis.com/mobagedxd/Scroll_to_top.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_gloval_announce.png', 'https://storage.googleapis.com/mobagedxd/HomePage.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_orange.jpg%3F67.91', 'https://storage.googleapis.com/mobagedxd/Scroll_to_toporange.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fpage_top_orange.jpg%3F67.93', 'https://storage.googleapis.com/mobagedxd/Scroll_to_toporange.png');
     
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_aisatsu_rireki_2.png', 'http://dxdmobage.xp3.biz/Messages.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_aisatsu_rireki_2.png', 'https://storage.googleapis.com/mobagedxd/Messages.png');
 
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_arrow.png', 'http://dxdmobage.xp3.biz/More.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_shinchaku.png', 'http://dxdmobage.xp3.biz/Events.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_event.png', 'http://dxdmobage.xp3.biz/NEWS.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_unei.png', 'http://dxdmobage.xp3.biz/MmAnnounces.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_miru.png', 'http://dxdmobage.xp3.biz/showmore.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_arrow.png', 'https://storage.googleapis.com/mobagedxd/More.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_shinchaku.png', 'https://storage.googleapis.com/mobagedxd/Events.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_event.png', 'https://storage.googleapis.com/mobagedxd/NEWS.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_unei.png', 'https://storage.googleapis.com/mobagedxd/MmAnnounces.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_miru.png', 'https://storage.googleapis.com/mobagedxd/showmore.png');
 
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Ftop_mypage_btn.png', 'http://dxdmobage.xp3.biz/MainPage.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_blue.png', 'http://dxdmobage.xp3.biz/More_Blue.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_green.png', 'http://dxdmobage.xp3.biz/More_Green.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Ftop_mypage_btn.png', 'https://storage.googleapis.com/mobagedxd/MainPage.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_blue.png', 'https://storage.googleapis.com/mobagedxd/More_Blue.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn_motto_green.png', 'https://storage.googleapis.com/mobagedxd/More_Green.png');
 
 
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_oshirase.png', 'http://dxdmobage.xp3.biz/Events_2.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_event_green.png', 'http://dxdmobage.xp3.biz/News_2.png');
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_unei_blue.png', 'http://dxdmobage.xp3.biz/Announces_2.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_oshirase.png', 'https://storage.googleapis.com/mobagedxd/Events_2.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_event_green.png', 'https://storage.googleapis.com/mobagedxd/News_2.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fttl_unei_blue.png', 'https://storage.googleapis.com/mobagedxd/Announces_2.png');
     
     
     
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn400_gousei.png', 'http://dxdmobage.xp3.biz/Synthesis_act.png');
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn400_gousei.png', 'https://storage.googleapis.com/mobagedxd/Synthesis_act.png');
 
 
     // Evolve button
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn400_shinka.png', 'http://dxdmobage.xp3.biz/Evolve.png');    
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn400_shinka.png', 'https://storage.googleapis.com/mobagedxd/Evolve.png');    
     // Giftbox button
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn400_present.png', 'http://dxdmobage.xp3.biz/Giftboxbutton.png');    
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fcommon%2Fbtn400_present.png', 'https://storage.googleapis.com/mobagedxd/Giftboxbutton.png');    
 
     // AP IN Quest progress
-    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fquest%2Fkoudouryoku.png%3F1.55', 'http://dxdmobage.xp3.biz/AP.png');    
+    tags[i].src = tags[i].src.replace('http://sp.pf-img-a.mbga.jp/12014827?url=http%3A%2F%2Fmb.hsdd.maql-games.jp%2Fsp%2Fimage%2Fquest%2Fkoudouryoku.png%3F1.55', 'https://storage.googleapis.com/mobagedxd/AP.png');    
 }
